@@ -14,7 +14,7 @@ namespace Haken.CSharp8Demo
 		public static void Demo()
 		{
 			string s = null; // warning
-			Console.WriteLine(s);
+			Console.WriteLine(s.Length);
 
 
 			string? s2 = null; // ok

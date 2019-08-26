@@ -8,7 +8,7 @@ namespace Haken.CSharp8Demo
 {
     public class NullCoallescingAssignment
     {
-        public static void Demo()
+        public static void Demo(string? s)
 		{
 			object? o = null;
 			var something = new object();
@@ -20,11 +20,11 @@ namespace Haken.CSharp8Demo
 				o = something;
 			}
 
-
 			// C# 8.0 - Null Coallescing Assignment Operator ??=
-			o ??= something;
+			s ??= "Hello";
 
 			Console.WriteLine(o);
+			Console.WriteLine(s);
 		}
     }
 }
